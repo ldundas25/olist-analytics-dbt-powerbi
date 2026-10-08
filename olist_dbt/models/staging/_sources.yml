@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: olist
+    description: "Raw Olist CSV files from Kaggle, stored in data/raw"
+    meta:
+      external_location: "read_csv_auto('../data/raw/{name}.csv', header = true)"
+    tables:
+      - name: olist_orders_dataset
+      - name: olist_order_items_dataset
+      - name: olist_customers_dataset
+      - name: olist_sellers_dataset
+      - name: olist_products_dataset
+      - name: olist_order_payments_dataset
+      - name: olist_order_reviews_dataset
+      - name: product_category_name_translation
